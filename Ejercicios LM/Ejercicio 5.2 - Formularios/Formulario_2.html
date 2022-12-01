@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="vewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 2</title>
+  </head>
+  <body>
+    <form method="post" action="#">
+      <p>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha" />
+      </p>
+      <p>
+        <label for="fechahora">Fecha y Hora</label>
+        <input type="datetime-local" name="fechahora" id="fechahora" />
+      </p>
+      <p>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" />
+      </p>
+      <p>
+        <label for="mes">Mes</label>
+        <input type="month" name="mes" id="mes" />
+      </p>
+      <p>
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="numero" />
+      </p>
+      <p>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña" />
+      </p>
+      <p>
+        <label for="texto">Texto</label>
+        <input type="text" name="texto" id="texto" />
+      </p>
+      <p>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" />
+      </p>
+      <p>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora" />
+      </p>
+      <p>
+        <label for="web">Dirección Web</label>
+        <input type="url" name="web" id="web" />
+      </p>
+      <p>
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana" />
+      </p>
+      <p>
+        <label for="genero">Género</label><br />
+        <input type="radio" name="genero" value="M" />Masculino<br />
+        <input type="radio" name="genero" value="F" />Femenino<br />
+        <input type="radio" name="genero" value="NB" />No binario<br />
+      </p>
+      <p>
+        <label for="dispelect">Dispositivos Electrónicos</label><br />
+        <input type="checkbox" name="dispelect" value="PC" />Pc<br />
+        <input type="checkbox" name="dispelect" value="TAB" />Tableta<br />
+        <input type="checkbox" name="dispelect" value="MOB" />Móvil<br />
+      </p>
+      <p>
+        <input list="titulo" />
+        <datalist id="titulo">
+          <option value="Sin estudios" />
+          <option value="Primaria" />
+          <option value="Secundaria" />
+          <option value="Universitaria" />
+          <option value="FP" />
+        </datalist>
+      </p>
+      <p>
+        <label for="rango">Rango</label>
+        <input type="range" min="0" max="100" id="rango" />
+      </p>
+      <p>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" />
+      </p>
+      <p>
+        <label for="fich" />
+        <input type="file" name="fich" id="fich" />
+      </p>
+      <p>
+        <input type="submit" id="submit" />
+        <input type="reset" id="reset" />
+      </p>
+      <p>
+        <input list="programa" />
+        <datalist id="programa">
+          <option value="Atom" />
+          <option value="Notepad++" />
+          <option value="VsCode" />
+          <option value="Sublime" />
+          <option value="Brackets" />
+        </datalist>
+      </p>
+    </form>
+  </body>
+</html>

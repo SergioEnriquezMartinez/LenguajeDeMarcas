@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="vewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Ejercicio tablas 2</title>
+        <style>
+            table {
+                border-collapse:collapse;
+                }
+            td, th {
+                border: 1px solid black;
+                padding: 20px;
+                }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Ejercicio práctico con Tablas</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <td colspan="3"><img src="120_ipod.png" alt="Ipod 120" width="100%"/></td>
+                    <td colspan="2"><img src="100_ipod.png" alt="Ipod 100" width="100%"/></td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Capacidad</th>
+                    <td>2GB</td>
+                    <td>4GB</td>
+                    <td>8GB</td>
+                    <td>32GB</td>
+                    <td>2GB</td>
+                </tr>
+                <tr>
+                    <th>Colores</th>
+                    <td>Blanco</td>
+                    <td>
+                        <ul>
+                            <li>Negro</li>
+                            <li>Rosa</li>
+                            <li>Dorado</li>
+                        </ul>
+                    </td>
+                    <td>Negro</td>
+                    <td colspan="2">
+                        <ul>
+                            <li>Negro</li>
+                            <li>Blanco</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pantalla</th>
+                    <td colspan="3">3 pulgadas</td>
+                    <td colspan="2">7 pulgadas</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Tiempo de carga</th>
+                    <td rowspan="2" colspan="3">1 hora</td>
+                    <td colspan="2">5 horas</td>
+                </tr>
+                <tr>
+                    <td colspan="2">30 minutos para 75%</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

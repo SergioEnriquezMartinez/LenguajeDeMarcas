@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 50%;
+}
+div:first-child {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+div:nth-child(2) {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+div:nth-child(3) {
+    text-align: right;
+    margin: 0 auto;
+    width: 50%;
+}
+p:nth-child(2) {
+    text-align: left;
+}

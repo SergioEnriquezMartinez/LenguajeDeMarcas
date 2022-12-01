@@ -1,0 +1,41 @@
+* {
+    text-align: center;
+    font-weight: bold;
+}
+caption {
+    font-size: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+}
+td, th {
+    border: 1px solid black;
+    padding: 20px;
+}
+tr {
+    background-color: blue;
+}
+#vacio {
+    background-color: white;
+}
+th {
+    background-color: red;
+    color: white;
+}
+.capacidad {
+    background-color: grey;
+    font-size: 30px;
+}
+.color {
+    background-color: white;
+}
+.font-color {
+    color: red;
+}
+#cinco-horas {
+    background-color: yellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

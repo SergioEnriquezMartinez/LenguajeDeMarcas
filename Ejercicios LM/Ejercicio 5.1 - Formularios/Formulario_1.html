@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="vewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulario 1</title>
+    </head>
+    <body> 
+        <form method="post" action="#">     <!--En el method ponemos como queremos mandarlo y en el action a donde, esta en los apuntes esto (ponemos # porque realmente no tenemos un servidor donde mandarlo)-->
+            <p>
+                <label for="nombre">Nombre:</label>     <!--El label for para poner el texto Nombre y el input type para indicar el tipo de dato que queremos introducir-->
+                <input type="text" name="nombre" />
+            </p>
+        </br>
+            <p>
+                <label for="provincia">Provincia</label>        <!--Lo separo todo en parrafos para que se quede mejor esteticamente y mas centrado-->
+                <select name="Provincia" multiple="multiple">    <!--El multiple este no se porque lo ha puesto exactamente porque no me he enterado muy bien cuando lo ha dicho-->
+                    <optgroup label="Aragón">
+                        <option value="Zar">Zaragoza</option>       <!--Aqui hacemos un select con sus subcategorias (similar a una tabla) y el option value es por si tenemos que recoger datos porque es mas facil el "zar" que la palabra completa-->
+                        <option value="Hue">Huesca</option>
+                        <option value="Ter">Teruel</option>
+                    </optgroup>
+                    <optgroup label="Extremadura">
+                        <option value="Bad">Badajoz</option>        <!--Esto es otro ejemplo que he puesto yo a mayores para probar una cosa pero no es necesario-->
+                        <option value="Cac">Cáceres</option>
+                    </optgroup>
+                </select>
+            </p>
+        </br>
+            <p>
+                <textarea cols="30" rows="10">      <!--Aqui hacemos un area de texto con los atributos cols y rows para poner columnas y filas por defecto para el tamaño del area(como el colspan y el rowspan de las tablas). Por cierto el idioma es inventado asi que no te rayes :)-->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate corrupti ut earum,
+aliquam sint amet repellendus, vitae placeat repellat quis, ipsa qui. Velit placeat reiciendis
+tempore autem nostrum eaque?
+                </textarea>
+            </p>
+        </br>
+            <p>
+                <button type="button">Haz click aquí</button>   <!--Aqui hacemos un boton simple, no tiene pérdida-->
+            </p>
+        </br>
+            <p>
+                <button type="button" disabled="disabled"><img src="asir-logo.jpg" alt="Logo de asir" width="100px"></button>   <!--Aqui metemos la imagen que nos da él dentro de un botón y la etiqueta disabled es para deshabilitarlo-->
+            </p>
+        </br>
+            <p>
+                <fieldset>
+                    <legend>Datos Personales</legend>   <!--Aqui hacemos una agrupación de atributos con la etiqueta fieldset y hacemos un mix de todo lo anterior pero mas reducido-->
+                    <p>
+                        <label for="nombre2">Nombre:</label>
+                        <input type="text" name="nombre2" id="nombre2" placeholder="Inserta tu nombre" required="required" />   <!--No me preguntes por que mete el id porque no nos lo ha dicho, solo que mas adelante lo veremos-->
+                    </p>
+                    <p>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" value="Pérez" readonly="readonly" />
+                    </p>
+                    <p>
+                        <label for="provincia">Provincia:</label>
+                        <select name="provincia">
+                            <option value="Zar">Zaragoza</option>
+                            <option value="Ter" selected="selected">Teruel</option>
+                            <option value="Hue">Huesca</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar</button> <!--Aqui metemos otro tipo de boton, en los apuntes te pone para que sirve cada uno-->
+                    </p>
+                </fieldset>
+            </p>
+        </form>
+    </body>
+</html>

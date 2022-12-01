@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+h6 {
+    color: red;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td, th {
+    border: 1px solid black;
+}
+tr:first-of-type th::first-letter {
+    font-size: 1.5rem;
+}
+tr td:first-child {
+    background-color: green;
+}
+tr:nth-child(3) th {
+    background-color: yellow;
+}
+:placeholder-shown {
+    border: 1px solid red;
+    padding: 10px;
+}
+th:last-child:hover, td:last-child:hover {
+    font-size: 2rem;
+}
+label::after {
+    content: "*";
+    color: red;
+}

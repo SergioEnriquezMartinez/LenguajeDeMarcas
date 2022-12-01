@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+#primer-parrafo {
+    background-color: grey;
+}
+
+.especial {
+    color: blue;
+}
+
+.tam-especial {
+    font-size: 3rem;
+}
+
+h2, h3 {
+    border: 1px solid orange;
+}
+
+li {
+    color: red;
+}
+
+li ul li {
+    color: green;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.azul {
+    background-color: blue;
+    color: #fff;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-left: 20px;
+}
+
+p > img {
+    border: 2px solid black;
+}
+
+p span img {
+    border: 2px solid red;
+}
+
+/*
+Esta seria una alternativa válida al selector anterior
+[alt="Logo JCyL 2"] {
+    border: 2px solid red;
+}
+*/

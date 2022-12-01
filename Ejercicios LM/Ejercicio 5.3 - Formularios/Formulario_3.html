@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="vewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 3</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      legend {
+        border: 1px solid black;
+        background-color: white;
+      }
+      #fieldset1 {
+        background-color: grey;
+      }
+      #fieldset2 {
+        background-color: burlywood;
+      }
+      #fieldset3 {
+        background-color: brown;
+      }
+      ul {
+        list-style: none;
+      }
+    </style>
+    <h1>HOJA DE INSCRIPCIÓN</h1>
+    <h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    <form method="post" action="#">
+      <fieldset id="fieldset1">
+        <table>
+          <legend>Datos Personales</legend>
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="ap" />
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" />
+          </p>
+          <p>
+            <label for="localidad">Localidad de nacimiento</label>
+            <input type="text" name="localidad" id="localidad" />
+            <label for="provincia">Provincia</label>
+            <select name="provincia">
+              <option value="Mad">Madrid</option>
+              <option value="Av">Ávila</option>
+              <option value="Seg">Segovia</option>
+              <option value="Vall">Valladolid</option>
+            </select>
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento" />
+          </p>
+          <p>
+            <label for="address">Dirección</label>
+            <input type="address" name="address" id="Addr" />
+            <label for="CP">Código Postal</label>
+            <input type="text" name="CP" id="CP" />
+          </p>
+        </table>
+      </fieldset>
+      <fieldset id="fieldset2">
+        <legend>Forma de acceso</legend>
+        <ul>
+          <li><input type="radio" name="prueba" value="Directo" />Directo</li>
+          <ul>
+            <li>
+              <input type="radio" name="tabla" value="Bach" />Modalidad de
+              Bachillerato <input type="text" name="bachillerato" id="dir" />
+            </li>
+            <li><input type="radio" name="tabla" value="Exp" />Experimental</li>
+            <li>
+              <input type="radio" name="tabla" value="Cou" />COU Opción<input
+                type="text"
+                name="tabla"
+                id="Coutext"
+              />
+            </li>
+            <li><input type="radio" name="tabla" value="FP" />FP</li>
+            <li>
+              <input type="radio" name="tabla" value="Otro" />Otros
+              <input type="text" name="directo" id="dir" />
+            </li>
+          </ul>
+          <li>
+            <input type="radio" name="prueba" value="Libre" />Prueba Libre
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset id="fieldset3">
+        <legend>Datos Adjuntados</legend>
+        <input type="checkbox" name="datos" value="DNI" />Fotocopia DNI
+        <input type="checkbox" name="datos" value="Cer" />Certificado
+        Académico<br />
+        <input type="checkbox" name="datos" value="Otros" />Otros documentos
+        (especifice):
+        <input type="text" name="datos" id="otros" />
+      </fieldset>
+      <br />
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/Multimedia/fondo2.jpg");
+    position: relative;
+}
+.partido, .partido_ganador {
+    text-align: center;
+    color:white;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url("/Multimedia/campofutbol.jpg");
+}
+.equipo {
+    display: flex;
+}
+
+.texto {
+    width: 100px;
+    color:white;
+}
+.texto2 {
+    text-align: center;
+    color:white;
+}
+
+.goles {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.penaltis {
+    font-size: 0.7rem;
+    color:white;
+}
+
+img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.container8, .container4, .container2, .container1{
+    margin: 12px;
+    font-size: 0.9rem;
+    float:left;
+}
+
+.container4{
+    margin-top: 5.5%;
+}
+.container2 {
+    margin-top: 8%;
+}
+
+.container1, .ganador {
+ margin-top: 8.8%;
+}
+
+.info {
+    width: 75.5%;
+}
+
+.container8_2{
+    font-size: 0.9rem;
+    margin: 13px;
+    float: right;
+}
+
+.container4_2 {
+    font-size: 0.9rem;
+    margin: 13px;
+    float: right;
+    margin-top: 5.5%;
+}
+
+.container2_2{
+    font-size: 0.9rem;
+    margin: 13px;
+    float: right;
+    margin-top: 8%;
+}
+
+.container1_2 {
+    font-size: 0.9rem;
+    margin: 13px;
+    float: right;
+    margin-top: 8.8%;
+}
+
+.copa {
+    width: 8%;
+    margin-top: 8.8%;
+    margin-left: 40px;
+}
+
+.partido_ganador {
+    width: 8%;
+    margin-left: 46%;
+}
+footer {
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+    left: 34%;
+    color: lightgray;
+    font-size: 2rem;
+}

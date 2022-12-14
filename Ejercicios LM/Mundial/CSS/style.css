@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("/Multimedia/fondo2.jpg");
+    background-image: url("/Mundial/Multimedia/fondo2.jpg");
     position: relative;
 }
 .partido, .partido_ganador {
@@ -15,7 +15,7 @@ body {
     padding: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-image: url("/Multimedia/campofutbol.jpg");
+    background-image: url("/Mundial/Multimedia/campofutbol.jpg");
 }
 .equipo {
     display: flex;

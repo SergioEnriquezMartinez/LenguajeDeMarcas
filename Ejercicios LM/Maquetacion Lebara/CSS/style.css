@@ -15,6 +15,7 @@ body {
 .container {
     margin: 0 auto;
     width: 80%;
+    padding-top: 3%;
 }
 #headerIzq {
     float: left;
@@ -51,4 +52,50 @@ header li:hover {
     background-image: url(../Multimedia/img/fotogrande.jpg);
     height: 500px;
     background-size: cover;
+}
+#parr1 {
+    width: 28%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+input:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 3px;
+}
+input {
+    padding: 1%;
+    width: 20%;
+}
+span {
+    font-weight: bold;
+}
+.artGrandes {
+    width: 300px;
+    font-size: 0.5rem;
+    color: var(--text-color);
+    padding-bottom: 1%;
+}
+.artGrandes div {
+    display: inline-block;
+}
+#rosa {
+    background-color: rgb(250, 61, 124);
+}
+#naranja {
+    background-color: orange;
+}
+.imgGrande {
+    width: 300px;
+}
+.contenidoArtGrand {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.butGrand {
+    color: #fff;
+    float: right;
+    width: 40%;
+    border-radius: 3px;
+    border-color: #fff;
 }

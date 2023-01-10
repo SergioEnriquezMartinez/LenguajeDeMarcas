@@ -1,45 +1,54 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --bg-color: #009fe3;
+    --text-color: #fff;
+    --header-text-color: #808080;
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: sans-serif;
+    width: 100%;
 }
-.container80 {
+.container {
+    margin: 0 auto;
     width: 80%;
-    display: inline-block;
+}
+#headerIzq {
+    float: left;
+    width: 20%;
+}
+#headerDer {
+    float: right;
+    width: 80%;
+    color: var(--header-text-color);
+    font-weight: bold;
+}
+.cb {
+    clear: both;
 }
 header img {
     width: 80px;
 }
-#menu_top {
+header ul, header li {
+    padding: 0;
+    margin: 0;
+}
+header li {
+    list-style-type: none;
     float: right;
-    padding: 1%;
-    border-radius: 5px;
+    margin: 30px 5px 10px 20px;
+    padding: 5px 10px;
 }
-#menu_top div {
-    display: inline-block;
-    margin: 2%;
+header li:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 3px;
 }
-#info_principal {
+.fotoGrande {
     background-image: url(../Multimedia/img/fotogrande.jpg);
-    width: 100%;
-}
-#publi {
-    color: white;
-    font-size: 2rem;
-    width: 20%;
-    padding: 1%;
-    margin-left: 10%;
-}
-#publi input  {
-    text-align: center;
-    float: left;
-    width: 60%;
-    background-color: #009fe3;
-    color: white;
-    padding: 1%;
-    margin-top: 10%;
-    border-radius: 5px;
+    height: 500px;
+    background-size: cover;
 }

@@ -66,36 +66,46 @@ input:hover {
 input {
     padding: 1%;
     width: 20%;
+    border: 0;
 }
 span {
     font-weight: bold;
 }
 .artGrandes {
-    width: 300px;
-    font-size: 0.5rem;
+    width: 80%;
+    font-size: 0.7rem;
     color: var(--text-color);
     padding-bottom: 1%;
 }
-.artGrandes div {
-    display: inline-block;
-}
 #rosa {
     background-color: rgb(250, 61, 124);
+    width: 35%;
+    float: left;
 }
 #naranja {
     background-color: orange;
+    float: right;
+    width: 35%;
 }
 .imgGrande {
-    width: 300px;
+    width: 100%;
 }
 .contenidoArtGrand {
     padding-left: 5%;
     padding-right: 5%;
+    width: 100%;
 }
 .butGrand {
     color: #fff;
     float: right;
     width: 40%;
     border-radius: 3px;
-    border-color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 2%;
+}
+#butRosa {
+    background-color: rgb(250, 61, 124);
+}
+#butNaranja {
+    background-color: orange;
 }

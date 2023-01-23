@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  --azul-facebook : #3b5998;
+  --text-color: #fff;
+}
+header {
+  background-color: var(--azul-facebook);
+  color: var(--text-color);
+}
+#contHeader {
+  margin-left: 10%;
+  width: 80%;
+}
+header img {
+  float: left;
+}
+.cb {
+  clear: both;
+}
+form {
+    float: right;
+}
+form div {
+    display: inline-block;
+}

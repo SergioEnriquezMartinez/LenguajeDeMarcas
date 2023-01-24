@@ -1,3 +1,21 @@
 * {
     box-sizing: border-box;
+    --color-verde-coviran: #04943c;
+    --color-verde-footer: #3c9824;
+}
+header {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--color-verde-coviran);
+}
+#imgHeaderIz {
+    float: left;
+    padding: 10px;
+}
+#imgHeaderDe {
+    padding: 10px;
+    float: right;
+}
+.cb {
+    clear: both;
 }

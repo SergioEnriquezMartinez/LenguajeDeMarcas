@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo-azul: #1e4c8f;
+}
+
+header {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}

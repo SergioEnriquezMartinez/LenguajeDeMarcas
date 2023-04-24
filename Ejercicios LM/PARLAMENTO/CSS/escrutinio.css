@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo-naranja: #c53d01;
+}
+header {
+    height: 265px;
+    background-image: url(../img/img/fondo_header_body.gif);
+}
+.divHeader {
+    background-color: var(--color-fondo-naranja);
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.divHeader div {
+    padding-top: 0.5%;
+}

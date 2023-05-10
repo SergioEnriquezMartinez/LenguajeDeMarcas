@@ -1,0 +1,3 @@
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre, apellidos, movil*, fijo*, email?, sexo?, pareja?, comentario)>
+<!ATTLIST contacto codigo ID #REQUIRED>

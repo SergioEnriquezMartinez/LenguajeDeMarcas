@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<!DOCTYPE pizzas SYSTEM "pizzas.dtd">-->
+<!--<!DOCTYPE pizzas [
+<!ELEMENT pizzas (pizza+)>
+<!ELEMENT pizza (ingrediente+, bebida?)>
+<!ATTLIST pizza
+    nombre CDATA #REQUIRED
+    precio CDATA #IMPLIED>
+<!ELEMENT ingrediente EMPTY>
+<!ATTLIST ingrediente nombre CDATA #REQUIRED>
+<!ELEMENT bebida ((refresco)* | agua)>
+<!ELEMENT refresco (#PCDATA)>
+<!ELEMENT agua EMPTY>]>-->
+<pizzas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="pizzas.xsd">
+<!--<pizzas>-->
+	<pizza nombre="barbacoa" precio="8">
+		<ingrediente nombre="Salsa Barbacoa"/>
+		<ingrediente nombre="Mozzarella"/>
+		<ingrediente nombre="Pollo"/>
+		<ingrediente nombre="Bacon"/>
+		<ingrediente nombre="Ternera"/>
+	</pizza>
+	<pizza nombre="margarita">
+		<ingrediente nombre="Tomate" />
+		<ingrediente nombre="Jamon"/>
+		<ingrediente nombre="Queso"/>
+		<bebida>
+			<refresco>cocacola</refresco>
+			<refresco>fanta</refresco>
+		</bebida>
+	</pizza>
+	<pizza nombre="4quesos">
+		<ingrediente nombre="parmesano"/>
+		<ingrediente nombre="azul"/>
+		<bebida>
+			<agua />
+			
+		</bebida>
+	</pizza>
+</pizzas>

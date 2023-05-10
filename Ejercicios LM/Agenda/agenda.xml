@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE agenda SYSTEM "agenda.dtd">
-<agenda>
+<!--<!DOCTYPE agenda SYSTEM "agenda.dtd">-->
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="agenda.xsd">
+<!--<agenda>-->
 	<contacto codigo="c1">
 		<nombre>Paco</nombre>
 		<apellidos>Pulido</apellidos>
 		<movil empresa="Azarquiel">654435435</movil>
 		<movil>646456546</movil>
-		<fijo>93242342</fijo>
+		<fijo>932423420</fijo>
 		<email tipo="empresa">paco@kk.com</email>
 		<sexo>
 			<hombre />

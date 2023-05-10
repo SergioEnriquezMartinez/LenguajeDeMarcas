@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="agenda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contacto" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="contacto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+                <xs:element name="apellidos" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+                <xs:element name="movil" type="tipoMovil" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="fijo" type="tipoFijo" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="email" type="tipoEmail" minOccurs="0" maxOccurs="1"></xs:element>
+                <xs:element name="sexo" type="sexo" minOccurs="0" maxOccurs="1"></xs:element>
+                <xs:element name="pareja" minOccurs="0" maxOccurs="1"></xs:element>
+                <xs:element name="comentario" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="codigo" type="xs:ID" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--Para el movil-->
+    <xs:complexType name="tipoMovil">
+        <xs:simpleContent>
+            <xs:extension base="tMovil">
+                <xs:attribute name="empresa" type="xs:string" use="optional"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="tMovil">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="9"></xs:totalDigits>
+            <xs:pattern value="(6|7)[0-9]{8}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!--Para el fijo-->
+    <xs:simpleType name="tipoFijo">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="9"></xs:totalDigits>
+            <xs:pattern value="(9)[0-9]{8}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--Para el email-->
+    <xs:complexType name="tipoEmail">
+        <xs:simpleContent>
+            <xs:extension base="tEmail">
+                <xs:attribute name="tipo" type="xs:string" use="required"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="tEmail">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]+@[^@]+.(es|com)"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--Para el genero-->
+    <xs:complexType name="sexo">
+        <xs:choice>
+            <xs:element name="hombre" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="mujer" minOccurs="1" maxOccurs="1"></xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:simpleType name="codigo">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[A-Z]+[0-9]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>

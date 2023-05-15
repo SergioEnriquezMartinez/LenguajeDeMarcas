@@ -44,7 +44,7 @@
     <xs:simpleType name="tipoFijo">
         <xs:restriction base="xs:positiveInteger">
             <xs:totalDigits value="9"></xs:totalDigits>
-            <xs:pattern value="(9)[0-9]{8}"></xs:pattern>
+            <xs:pattern value="9[0-9]{8}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
 
@@ -52,21 +52,34 @@
     <xs:complexType name="tipoEmail">
         <xs:simpleContent>
             <xs:extension base="tEmail">
-                <xs:attribute name="tipo" type="xs:string" use="required"></xs:attribute>
+                <xs:attribute name="tipo" type="tTipoEmail" use="required"></xs:attribute>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:simpleType name="tEmail">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[a-z]+@[^@]+.(es|com)"></xs:pattern>
+            <xs:pattern value="[a-z0-9_.-]+@[^@]+.(es|com)"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tTipoEmail">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="empresa"></xs:enumeration>
+            <xs:enumeration value="personal"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
 
     <!--Para el genero-->
     <xs:complexType name="sexo">
         <xs:choice>
-            <xs:element name="hombre" minOccurs="1" maxOccurs="1"></xs:element>
-            <xs:element name="mujer" minOccurs="1" maxOccurs="1"></xs:element>
+            <xs:element name="hombre" minOccurs="1" maxOccurs="1">
+                <xs:complexType/>
+            </xs:element>
+            <xs:element name="mujer" minOccurs="1" maxOccurs="1">
+                <xs:complexType/>
+            </xs:element>
+            <xs:element name="otro" minOccurs="1" maxOccurs="1">
+                <xs:complexType/>
+            </xs:element>
         </xs:choice>
     </xs:complexType>
 
@@ -75,6 +88,15 @@
             <xs:pattern value="[A-Z]+[0-9]"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
+
+    <!-- Para la pareja-->
+    <xs:element name="pareja">
+        <xs:complexType>
+            <xs:attribute name="codigo" type="xs:ID" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    
 
 
 </xs:schema>

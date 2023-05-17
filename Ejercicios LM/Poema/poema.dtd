@@ -1,0 +1,2 @@
+<!ELEMENT poema (titulo, versos+)>
+<!ATTLIST poema fecha CDATA #IMPLIED>

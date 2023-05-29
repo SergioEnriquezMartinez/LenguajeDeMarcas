@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="agenda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="contacto" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="xs:string" />
+							<xs:element name="apellidos" type="xs:string" />
+							<xs:element name="movil" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="empresa" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="fijo" minOccurs="0" type="xs:string" />
+							<xs:element name="email" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="tipo" use="required" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="sexo" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence minOccurs="0">
+										<xs:element name="hombre" minOccurs="0" />
+										<xs:element name="mujer" minOccurs="0" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="pareja" minOccurs="0">
+								<xs:complexType>
+									<xs:attribute name="codigo" use="required" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="comentario" type="xs:string" />
+						</xs:sequence>
+						<xs:attribute name="codigo" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--<!DOCTYPE agenda SYSTEM "agenda.dtd">-->
-<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation="agenda.xsd">
-<!--<agenda>-->
+<?xml version="1.0" ?>
+<?xml-stylesheet href="estilo.xsl" type="text/xsl"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="agenda1.xsd">
 	<contacto codigo="c1">
 		<nombre>Paco</nombre>
 		<apellidos>Pulido</apellidos>

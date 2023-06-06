@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="solicitud">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="solicitante" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element ref="actividad" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="peticion" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="solicitante">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="anio" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element ref="direccion" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="telefono" type="tipoMovil" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="direccion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="calle" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="numero" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="piso" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="letra" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="actividad">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+				<xs:element name="nivel" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="tipoMovil">
+			<xs:restriction base="xs:positiveInteger">
+			<xs:totalDigits value="9"></xs:totalDigits>
+				<xs:pattern value="(6|7|9)[0-9]{8}"></xs:pattern>
+			</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

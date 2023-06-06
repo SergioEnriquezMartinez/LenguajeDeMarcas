@@ -1,0 +1,13 @@
+<!ELEMENT solicitud (solicitante,actividad,peticion+)>
+<!ELEMENT solicitante (nombre,anio,direccion,telefono+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT direccion (calle,numero,piso,letra)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT piso (#PCDATA)>
+<!ELEMENT letra (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT actividad (nombre,nivel)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT peticion (#PCDATA)>

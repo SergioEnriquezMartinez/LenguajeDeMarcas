@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="concesionario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="coche" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="reserva" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="marca" type="xs:string"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="coche">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="modelo" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="modelo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="stock" type="xs:positiveInteger"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
